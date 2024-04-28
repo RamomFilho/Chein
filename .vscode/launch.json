@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Run Project",
+      "configurations": [
+        "Backend - Django",
+        "Frontend - Vue",
+      ]
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Backend - Django",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/manage.py",
+      "python": "${workspaceFolder}/backend/env/bin/python",
+      "args": [
+        "runserver"
+      ],
+      "envFile": "${workspaceFolder}/.env",
+      "django": true,
+      "justMyCode": true
+    },
+    {
+      "name": "Frontend - Vue",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}/frontend",
+      "console": "integratedTerminal",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "serve"
+      ]
+    }
+  ]
+}
