@@ -32,7 +32,7 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
-    "https://chein-frontend.vercel.app"
+    "https://chein-front-qwevrcrad-ramomprojetos.vercel.app/"
 ]
 
 MIDDLEWARE = [
