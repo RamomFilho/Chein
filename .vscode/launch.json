@@ -20,6 +20,7 @@
         "runserver"
       ],
       "envFile": "${workspaceFolder}/.env",
+      // "preLaunchTask": "EnvCredentials",
       "django": true,
       "justMyCode": true
     },
