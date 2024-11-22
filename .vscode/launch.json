@@ -19,7 +19,10 @@
       "args": [
         "runserver"
       ],
-      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "AWS_PROFILE": "RamomDev"
+      },
+      // "envFile": "${workspaceFolder}/.env",
       // "preLaunchTask": "EnvCredentials",
       "django": true,
       "justMyCode": true
